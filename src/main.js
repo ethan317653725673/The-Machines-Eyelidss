@@ -31,7 +31,7 @@ function parseStory(text) {
     .join("");
 }
 
-fetch("/Assets/Text/Story.txt")
+fetch("./Assets/Text/Story.txt")
   .then(res => res.text())
   .then(text => {
     storyContainer.innerHTML = parseStory(text);
